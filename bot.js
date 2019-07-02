@@ -8,7 +8,7 @@ client.on('ready', () => {
 
     console.log('I am ready!')
 	
-client.user.setPresence({ game: { name: 'with discord.js' }, status: 'idle' })
+client.user.setPresence({ game: { name: 'with discord.js' }, status: 'online' })
  .then(console.log)
  .catch(console.error);
 
