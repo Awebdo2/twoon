@@ -3,17 +3,17 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const prefix = "-";
-
- 
-
+	   
 client.on('ready', () => {
 
     console.log('I am ready!')
+	
 client.user.setPresence({ game: { name: 'with discord.js' }, status: 'idle' })
  .then(console.log)
  .catch(console.error);
 
 });
+
 client.on('message', message => {
 let messageArray = message.content.split(" ");
 let args = messageArray.slice(1).join(" ");
@@ -338,8 +338,7 @@ client.on('message', message => {
 	    message.delete(100)
     }
 });
-client.on('message', message => {
-	if (message.content.startsWith(prefix + "hug")) {
+
 		
 
 client.on('message', message => {
@@ -371,10 +370,6 @@ client.on('message', message => {
 	 }
     });
 
-client.on('message', message => { 
-	if (message.content === ("minecraft hhhh")) {
-	message.reply("zpy hhh")
-	}
-});
-	
-client.login(process.env.BOT_TOKEN); 
+
+
+client.login(process.env.BOT_TOKEN); 	
